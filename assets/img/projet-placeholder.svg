@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7aa2ff" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#a6e3a1" stop-opacity="0.22"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0b1020"/>
+  <rect x="48" y="48" width="1104" height="534" rx="28" fill="url(#g)" stroke="#2a3354" stroke-width="2"/>
+  <text x="90" y="170" fill="#e8ecff" font-family="Inter, Arial, sans-serif" font-size="54" font-weight="800">Illustration projet</text>
+  <text x="90" y="240" fill="#b8c0e6" font-family="Inter, Arial, sans-serif" font-size="28">Remplacez cette image par une capture, un schéma ou une photo.</text>
+  <text x="90" y="330" fill="#b8c0e6" font-family="Inter, Arial, sans-serif" font-size="22">Format conseillé : 1200 × 630</text>
+</svg>

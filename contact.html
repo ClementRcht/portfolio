@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact – Clément Rouchit</title>
+  <meta name="description" content="Portfolio et CV en ligne de Clément Rouchit : compétences, projets, expériences et contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+
+<header class="header">
+  <div class="container">
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="brand" href="index.html">
+        <span class="dot" aria-hidden="true"></span>
+        <span>Clément Rouchit</span>
+      </a>
+      <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="menu">Menu</button>
+      <div class="navlinks" id="menu" data-navlinks>
+        <a href="index.html">Accueil</a>
+        <a href="competences.html">Compétences</a>
+        <a href="projets.html">Projets</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu">
+
+<section class="section">
+  <div class="container">
+    <h1 class="h1" style="margin-top:10px">Contact</h1>
+    <p class="lead">Un message, une opportunité d’alternance, une question : je réponds rapidement.</p>
+
+    <div class="split">
+      <div class="item">
+        <strong>Coordonnées</strong>
+        <p class="hint" style="margin:10px 0 0">
+          Email : <a href="mailto:cl.rouchit@gmail.com">cl.rouchit@gmail.com</a><br>
+          Téléphone : 07 72 26 26 02<br>
+          Localisation : Montgiscard (31)
+        </p>
+        <p class="hint">
+          Conseil : sur GitHub Pages, un formulaire HTML « pur » n’envoie pas d’email. Vous avez 2 options :
+          <br>— utiliser un service (Formspree, Netlify Forms, etc.)
+          <br>— ou un lien <code>mailto:</code>.
+        </p>
+      </div>
+
+      <div class="item">
+        <strong>Formulaire</strong>
+        <p class="hint">Option simple : remplacez l’attribut <code>action</code> par l’URL Formspree.</p>
+
+        <form action="mailto:cl.rouchit@gmail.com" method="post" enctype="text/plain">
+          <div class="form-row">
+            <div>
+              <label for="nom">Nom</label>
+              <input id="nom" name="Nom" autocomplete="name" required />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="Email" type="email" autocomplete="email" required />
+            </div>
+          </div>
+
+          <div>
+            <label for="sujet">Sujet</label>
+            <input id="sujet" name="Sujet" required />
+          </div>
+
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="Message" required></textarea>
+          </div>
+
+          <button class="btn primary" type="submit">Envoyer</button>
+          <p class="hint" style="margin:0">
+            Si vous utilisez <code>mailto:</code>, l’envoi ouvrira votre client mail.
+            Pour un envoi direct sans client mail, passez par Formspree.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="split">
+      <div>
+        <strong>Clément Rouchit</strong><br>
+        Déploiement d’applications communicantes et sécurisées (BUT Informatique)
+      </div>
+      <div>
+        <a href="contact.html">Me contacter</a> ·
+        <a href="cv.html">Télécharger le CV</a> ·
+        <a href="projets.html">Voir les projets</a>
+      </div>
+    </div>
+    <p class="hint" style="margin-top:12px">© <span id="year"></span> — Site conçu pour un usage en entretien et sur GitHub Pages.</p>
+  </div>
+</footer>
+<script src="assets/js/main.js" defer></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

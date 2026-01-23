@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV – Clément Rouchit</title>
+  <meta name="description" content="Portfolio et CV en ligne de Clément Rouchit : compétences, projets, expériences et contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+
+<header class="header">
+  <div class="container">
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="brand" href="index.html">
+        <span class="dot" aria-hidden="true"></span>
+        <span>Clément Rouchit</span>
+      </a>
+      <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="menu">Menu</button>
+      <div class="navlinks" id="menu" data-navlinks>
+        <a href="index.html">Accueil</a>
+        <a href="competences.html">Compétences</a>
+        <a href="projets.html">Projets</a>
+        <a href="cv.html" aria-current="page">CV</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu">
+
+<section class="section">
+  <div class="container">
+    <h1 class="h1" style="margin-top:10px">CV</h1>
+    <p class="lead">Version PDF et résumé rapide.</p>
+
+    <div class="split">
+      <div class="item">
+        <strong>Téléchargement</strong>
+        <p class="hint">Téléchargez la version PDF (à placer dans <code>assets/cv/</code>).</p>
+        <a class="btn primary" href="assets/cv/CV_Clément_Rouchit_Alternance_2025.pdf" download>Télécharger le CV</a>
+        <p class="hint" style="margin-top:12px">Si le lien ne fonctionne pas, vérifiez le nom du fichier PDF et l’emplacement dans le dépôt.</p>
+      </div>
+
+      <div class="item">
+        <strong>Résumé</strong>
+        <div class="meta">Alternance (1 an) à partir de septembre 2025</div>
+        <ul class="hint">
+          <li>Développement : VBA, Python, PHP, JavaScript</li>
+          <li>Données : SQL, tableaux de bord (Power BI/Excel), DAX</li>
+          <li>Déploiement : Docker, architecture réseau (notions)</li>
+          <li>Expérience : stage informatique (10 semaines) + missions variées</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="item" style="margin-top:14px">
+      <strong>Aperçu intégré</strong>
+      <p class="hint">Selon le navigateur, le PDF peut s’afficher directement ci-dessous.</p>
+      <div class="card" style="height:72vh; border-radius:16px">
+        <iframe title="CV PDF" src="assets/cv/CV_Clément_Rouchit_Alternance_2025.pdf" style="width:100%; height:100%; border:0"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="split">
+      <div>
+        <strong>Clément Rouchit</strong><br>
+        Déploiement d’applications communicantes et sécurisées (BUT Informatique)
+      </div>
+      <div>
+        <a href="contact.html">Me contacter</a> ·
+        <a href="cv.html">Télécharger le CV</a> ·
+        <a href="projets.html">Voir les projets</a>
+      </div>
+    </div>
+    <p class="hint" style="margin-top:12px">© <span id="year"></span> — Site conçu pour un usage en entretien et sur GitHub Pages.</p>
+  </div>
+</footer>
+<script src="assets/js/main.js" defer></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

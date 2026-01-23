@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projets – Clément Rouchit</title>
+  <meta name="description" content="Portfolio et CV en ligne de Clément Rouchit : compétences, projets, expériences et contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+
+<header class="header">
+  <div class="container">
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="brand" href="index.html">
+        <span class="dot" aria-hidden="true"></span>
+        <span>Clément Rouchit</span>
+      </a>
+      <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="menu">Menu</button>
+      <div class="navlinks" id="menu" data-navlinks>
+        <a href="index.html">Accueil</a>
+        <a href="competences.html">Compétences</a>
+        <a href="projets.html" aria-current="page">Projets</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu">
+
+<section class="section">
+  <div class="container">
+    <h1 class="h1" style="margin-top:10px">Projets</h1>
+    <p class="lead">Une sélection de réalisations. Chaque projet précise le contexte, ma contribution, et renvoie aux compétences associées.</p>
+
+    <div class="list">
+      <article class="item" id="stage-energie-services">
+        <strong>Stage – Outils internes, intranet et tableaux de bord</strong>
+        <div class="meta">Énergie Services Lavaur Pays de Cocagne (81) · 10 semaines</div>
+        <p class="hint">
+          Contexte : besoin d’outils internes pour faciliter la communication et le suivi d’indicateurs.
+          Réalisations : développement/maintenance d’outils (VBA, PHP, Python), conception/gestion d’un intranet,
+          création de tableaux de bord (Power BI ou Excel).
+        </p>
+        <div class="tags" aria-label="Compétences associées">
+          <span class="tag"><a href="competences.html#dev">Développement</a></span>
+          <span class="tag"><a href="competences.html#data">Données & BI</a></span>
+          <span class="tag"><a href="competences.html#security">Sécurité</a></span>
+          <span class="tag"><a href="competences.html#team">Travail en équipe</a></span>
+        </div>
+      </article>
+
+      <article class="item" id="projet-python-jeux">
+        <strong>Jeux Python – Démineur & Pac-Man</strong>
+        <div class="meta">Projet d’étude en groupe</div>
+        <p class="hint">
+          Objectif : modéliser une logique de jeu, gérer les entrées utilisateur, structurer le code et livrer un jeu fonctionnel.
+          Points de mise en valeur possibles : architecture du projet, gestion des collisions, tests simples, documentation.
+        </p>
+        <div class="tags" aria-label="Compétences associées">
+          <span class="tag"><a href="competences.html#dev">Développement</a></span>
+          <span class="tag"><a href="competences.html#team">Travail en équipe</a></span>
+        </div>
+      </article>
+
+      <article class="item" id="projet-docker">
+        <strong>Environnements – Docker & MongoDB</strong>
+        <div class="meta">Travaux pratiques / projets BUT2</div>
+        <p class="hint">
+          Objectif : déployer des services de manière reproductible, gérer des conteneurs, et comprendre les interactions réseau.
+          À compléter : lien vers dépôt GitHub, schéma d’architecture, commandes de lancement, résultats obtenus.
+        </p>
+        <div class="tags" aria-label="Compétences associées">
+          <span class="tag"><a href="competences.html#deploy">Déploiement</a></span>
+          <span class="tag"><a href="competences.html#data">Données</a></span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Conseil de présentation</h2>
+    <div class="item">
+      <p class="hint" style="margin:0">
+        Pour maximiser l’impact, ajoutez 1 à 3 preuves par projet (captures, schémas, liens Git),
+        et une phrase « résultat » (ex : temps gagné, fiabilité améliorée, adoption par l’équipe).
+      </p>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="split">
+      <div>
+        <strong>Clément Rouchit</strong><br>
+        Déploiement d’applications communicantes et sécurisées (BUT Informatique)
+      </div>
+      <div>
+        <a href="contact.html">Me contacter</a> ·
+        <a href="cv.html">Télécharger le CV</a> ·
+        <a href="projets.html">Voir les projets</a>
+      </div>
+    </div>
+    <p class="hint" style="margin-top:12px">© <span id="year"></span> — Site conçu pour un usage en entretien et sur GitHub Pages.</p>
+  </div>
+</footer>
+<script src="assets/js/main.js" defer></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

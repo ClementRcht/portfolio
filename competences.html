@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Compétences – Clément Rouchit</title>
+  <meta name="description" content="Portfolio et CV en ligne de Clément Rouchit : compétences, projets, expériences et contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+
+<header class="header">
+  <div class="container">
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="brand" href="index.html">
+        <span class="dot" aria-hidden="true"></span>
+        <span>Clément Rouchit</span>
+      </a>
+      <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="menu">Menu</button>
+      <div class="navlinks" id="menu" data-navlinks>
+        <a href="index.html">Accueil</a>
+        <a href="competences.html" aria-current="page">Compétences</a>
+        <a href="projets.html">Projets</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu">
+
+<section class="section">
+  <div class="container">
+    <h1 class="h1" style="margin-top:10px">Compétences</h1>
+    <p class="lead">Des compétences concrètes, reliées à des projets réels et à des livrables observables.</p>
+
+    <div class="list" id="competences">
+      <article class="item" id="dev">
+        <strong>Développement applicatif (Python, PHP, JavaScript)</strong>
+        <div class="meta">Conception, implémentation, tests, maintenance</div>
+        <p class="hint">Objectif : livrer des fonctionnalités stables et compréhensibles (code clair, validation, erreurs gérées).</p>
+        <div class="tags">
+          <span class="tag"><a href="projets.html#stage-energie-services">Projet : Stage — outils internes</a></span>
+          <span class="tag"><a href="projets.html#projet-python-jeux">Projet : Jeux Python (Démineur / Pac-Man)</a></span>
+        </div>
+      </article>
+
+      <article class="item" id="data">
+        <strong>Données & BI (SQL, Excel/Power BI, DAX)</strong>
+        <div class="meta">Modélisation, requêtes, indicateurs, tableaux de bord</div>
+        <p class="hint">Objectif : transformer des données en indicateurs utiles au pilotage (qualité, cohérence, lisibilité).</p>
+        <div class="tags">
+          <span class="tag"><a href="projets.html#stage-energie-services">Projet : Tableaux de bord</a></span>
+        </div>
+      </article>
+
+      <article class="item" id="deploy">
+        <strong>Déploiement & environnements (Docker, réseau)</strong>
+        <div class="meta">Services, configuration, supervision de base</div>
+        <p class="hint">Objectif : exécuter une application dans un environnement reproductible, avec un minimum de frictions.</p>
+        <div class="tags">
+          <span class="tag"><a href="projets.html#projet-docker">Projet : Docker / MongoDB</a></span>
+        </div>
+      </article>
+
+      <article class="item" id="security">
+        <strong>Bonnes pratiques de sécurité</strong>
+        <div class="meta">Sécurisation de base, gestion des accès, hygiène opérationnelle</div>
+        <p class="hint">Objectif : réduire les risques courants (mots de passe, droits, exposition involontaire, sauvegardes).</p>
+        <div class="tags">
+          <span class="tag"><a href="projets.html#stage-energie-services">Projet : Intranet</a></span>
+        </div>
+      </article>
+
+      <article class="item" id="team">
+        <strong>Travail en équipe</strong>
+        <div class="meta">Organisation, communication, gestion des priorités</div>
+        <p class="hint">Objectif : produire ensemble (répartition, points réguliers, versioning, amélioration continue).</p>
+        <div class="tags">
+          <span class="tag"><a href="projets.html#projet-python-jeux">Projet : Jeux en groupe</a></span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Preuves et livrables à ajouter</h2>
+    <div class="grid-3">
+      <div class="pill">
+        <h3>Captures / liens</h3>
+        <p>Exemples d’écrans, extraits de code, pages d’intranet, dashboards (si partage possible).</p>
+      </div>
+      <div class="pill">
+        <h3>Contexte</h3>
+        <p>Pour chaque preuve : besoin, solution, rôle, résultat (temps gagné, fiabilité, adoption).</p>
+      </div>
+      <div class="pill">
+        <h3>Transversalité</h3>
+        <p>Chaque projet renvoie aux compétences associées, et chaque compétence renvoie aux projets.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="split">
+      <div>
+        <strong>Clément Rouchit</strong><br>
+        Déploiement d’applications communicantes et sécurisées (BUT Informatique)
+      </div>
+      <div>
+        <a href="contact.html">Me contacter</a> ·
+        <a href="cv.html">Télécharger le CV</a> ·
+        <a href="projets.html">Voir les projets</a>
+      </div>
+    </div>
+    <p class="hint" style="margin-top:12px">© <span id="year"></span> — Site conçu pour un usage en entretien et sur GitHub Pages.</p>
+  </div>
+</footer>
+<script src="assets/js/main.js" defer></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

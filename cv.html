@@ -20,7 +20,11 @@
         <span class="dot" aria-hidden="true"></span>
         <span>Clément Rouchit</span>
       </a>
-      <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="menu">Menu</button>
+
+      <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="menu">
+        Menu
+      </button>
+
       <div class="navlinks" id="menu" data-navlinks>
         <a href="index.html">Accueil</a>
         <a href="competences.html">Compétences</a>
@@ -37,24 +41,23 @@
 <section class="section">
   <div class="container">
     <h1 class="h1" style="margin-top:10px">CV</h1>
-    <p class="lead">Version PDF et résumé rapide.</p>
+    <p class="lead">Version PDF et aperçu.</p>
 
     <div class="split">
       <div class="item">
         <strong>Téléchargement</strong>
-        <p class="hint">Téléchargez la version PDF (à placer dans <code>assets/cv/</code>).</p>
+        <p class="hint">Téléchargez la version PDF.</p>
         <a class="btn primary" href="assets/cv/CV_Clément_Rouchit_Alternance_2025.pdf" download>Télécharger le CV</a>
-        <p class="hint" style="margin-top:12px">Si le lien ne fonctionne pas, vérifiez le nom du fichier PDF et l’emplacement dans le dépôt.</p>
       </div>
 
       <div class="item">
         <strong>Résumé</strong>
         <div class="meta">Alternance (1 an) à partir de septembre 2025</div>
         <ul class="hint">
-          <li>Développement : VBA, Python, PHP, JavaScript</li>
-          <li>Données : SQL, tableaux de bord (Power BI/Excel), DAX</li>
-          <li>Déploiement : Docker, architecture réseau (notions)</li>
-          <li>Expérience : stage informatique (10 semaines) + missions variées</li>
+          <li>Développement : Python, PHP, JavaScript</li>
+          <li>Données : SQL, tableaux de bord</li>
+          <li>Déploiement : Docker (notions)</li>
+          <li>Expérience : stage informatique</li>
         </ul>
       </div>
     </div>
@@ -66,16 +69,16 @@
         <iframe title="CV PDF" src="assets/cv/CV_Clément_Rouchit_Alternance_2025.pdf" style="width:100%; height:100%; border:0"></iframe>
       </div>
     </div>
+
   </div>
 </section>
-
 </main>
 <footer class="footer">
   <div class="container">
     <div class="split">
       <div>
         <strong>Clément Rouchit</strong><br>
-        Déploiement d’applications communicantes et sécurisées (BUT Informatique)
+        Développement · Déploiement · Données · Sécurité
       </div>
       <div>
         <a href="contact.html">Me contacter</a> ·
@@ -87,6 +90,8 @@
   </div>
 </footer>
 <script src="assets/js/main.js" defer></script>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>

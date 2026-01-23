@@ -20,7 +20,11 @@
         <span class="dot" aria-hidden="true"></span>
         <span>Clément Rouchit</span>
       </a>
-      <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="menu">Menu</button>
+
+      <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="menu">
+        Menu
+      </button>
+
       <div class="navlinks" id="menu" data-navlinks>
         <a href="index.html">Accueil</a>
         <a href="competences.html" aria-current="page">Compétences</a>
@@ -37,85 +41,64 @@
 <section class="section">
   <div class="container">
     <h1 class="h1" style="margin-top:10px">Compétences</h1>
-    <p class="lead">Des compétences concrètes, reliées à des projets réels et à des livrables observables.</p>
+    <p class="lead">Compétences reliées à des projets et livrables.</p>
 
     <div class="list" id="competences">
       <article class="item" id="dev">
         <strong>Développement applicatif (Python, PHP, JavaScript)</strong>
         <div class="meta">Conception, implémentation, tests, maintenance</div>
-        <p class="hint">Objectif : livrer des fonctionnalités stables et compréhensibles (code clair, validation, erreurs gérées).</p>
+        <p class="hint">Objectif : livrer des fonctionnalités stables et maintenables.</p>
         <div class="tags">
-          <span class="tag"><a href="projets.html#stage-energie-services">Projet : Stage — outils internes</a></span>
-          <span class="tag"><a href="projets.html#projet-python-jeux">Projet : Jeux Python (Démineur / Pac-Man)</a></span>
+          <span class="tag"><a href="projets.html#stage-energie-services">Stage — outils internes</a></span>
+          <span class="tag"><a href="projets.html#projet-python-jeux">Jeux Python</a></span>
         </div>
       </article>
 
       <article class="item" id="data">
-        <strong>Données & BI (SQL, Excel/Power BI, DAX)</strong>
-        <div class="meta">Modélisation, requêtes, indicateurs, tableaux de bord</div>
-        <p class="hint">Objectif : transformer des données en indicateurs utiles au pilotage (qualité, cohérence, lisibilité).</p>
+        <strong>Données & BI (SQL, dashboards)</strong>
+        <div class="meta">Requêtes, indicateurs, visualisation, qualité</div>
+        <p class="hint">Objectif : produire des indicateurs actionnables.</p>
         <div class="tags">
-          <span class="tag"><a href="projets.html#stage-energie-services">Projet : Tableaux de bord</a></span>
+          <span class="tag"><a href="projets.html#stage-energie-services">Tableaux de bord</a></span>
         </div>
       </article>
 
       <article class="item" id="deploy">
         <strong>Déploiement & environnements (Docker, réseau)</strong>
-        <div class="meta">Services, configuration, supervision de base</div>
-        <p class="hint">Objectif : exécuter une application dans un environnement reproductible, avec un minimum de frictions.</p>
+        <div class="meta">Reproductibilité, services, configuration</div>
+        <p class="hint">Objectif : exécuter et livrer dans un environnement maîtrisé.</p>
         <div class="tags">
-          <span class="tag"><a href="projets.html#projet-docker">Projet : Docker / MongoDB</a></span>
+          <span class="tag"><a href="projets.html#projet-docker">Docker / MongoDB</a></span>
         </div>
       </article>
 
       <article class="item" id="security">
         <strong>Bonnes pratiques de sécurité</strong>
-        <div class="meta">Sécurisation de base, gestion des accès, hygiène opérationnelle</div>
-        <p class="hint">Objectif : réduire les risques courants (mots de passe, droits, exposition involontaire, sauvegardes).</p>
+        <div class="meta">Gestion des accès, hygiène, réduction des risques</div>
+        <p class="hint">Objectif : limiter les risques courants et sécuriser l’usage.</p>
         <div class="tags">
-          <span class="tag"><a href="projets.html#stage-energie-services">Projet : Intranet</a></span>
+          <span class="tag"><a href="projets.html#stage-energie-services">Intranet</a></span>
         </div>
       </article>
 
       <article class="item" id="team">
         <strong>Travail en équipe</strong>
-        <div class="meta">Organisation, communication, gestion des priorités</div>
-        <p class="hint">Objectif : produire ensemble (répartition, points réguliers, versioning, amélioration continue).</p>
+        <div class="meta">Organisation, communication, priorisation</div>
+        <p class="hint">Objectif : produire efficacement et améliorer en continu.</p>
         <div class="tags">
-          <span class="tag"><a href="projets.html#projet-python-jeux">Projet : Jeux en groupe</a></span>
+          <span class="tag"><a href="projets.html#projet-python-jeux">Jeux en groupe</a></span>
         </div>
       </article>
     </div>
   </div>
 </section>
-
-<section class="section">
-  <div class="container">
-    <h2>Preuves et livrables à ajouter</h2>
-    <div class="grid-3">
-      <div class="pill">
-        <h3>Captures / liens</h3>
-        <p>Exemples d’écrans, extraits de code, pages d’intranet, dashboards (si partage possible).</p>
-      </div>
-      <div class="pill">
-        <h3>Contexte</h3>
-        <p>Pour chaque preuve : besoin, solution, rôle, résultat (temps gagné, fiabilité, adoption).</p>
-      </div>
-      <div class="pill">
-        <h3>Transversalité</h3>
-        <p>Chaque projet renvoie aux compétences associées, et chaque compétence renvoie aux projets.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
 </main>
 <footer class="footer">
   <div class="container">
     <div class="split">
       <div>
         <strong>Clément Rouchit</strong><br>
-        Déploiement d’applications communicantes et sécurisées (BUT Informatique)
+        Développement · Déploiement · Données · Sécurité
       </div>
       <div>
         <a href="contact.html">Me contacter</a> ·
@@ -127,6 +110,8 @@
   </div>
 </footer>
 <script src="assets/js/main.js" defer></script>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>

@@ -20,7 +20,11 @@
         <span class="dot" aria-hidden="true"></span>
         <span>Clément Rouchit</span>
       </a>
-      <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="menu">Menu</button>
+
+      <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="menu">
+        Menu
+      </button>
+
       <div class="navlinks" id="menu" data-navlinks>
         <a href="index.html">Accueil</a>
         <a href="competences.html">Compétences</a>
@@ -37,16 +41,16 @@
 <section class="section">
   <div class="container">
     <h1 class="h1" style="margin-top:10px">Projets</h1>
-    <p class="lead">Une sélection de réalisations. Chaque projet précise le contexte, ma contribution, et renvoie aux compétences associées.</p>
+    <p class="lead">Sélection de réalisations : contexte, rôle, livrables, résultats.</p>
 
     <div class="list">
+
       <article class="item" id="stage-energie-services">
         <strong>Stage – Outils internes, intranet et tableaux de bord</strong>
-        <div class="meta">Énergie Services Lavaur Pays de Cocagne (81) · 10 semaines</div>
+        <div class="meta">Énergie Services Lavaur Pays de Cocagne · 10 semaines</div>
         <p class="hint">
-          Contexte : besoin d’outils internes pour faciliter la communication et le suivi d’indicateurs.
-          Réalisations : développement/maintenance d’outils (VBA, PHP, Python), conception/gestion d’un intranet,
-          création de tableaux de bord (Power BI ou Excel).
+          Besoin : faciliter la communication interne et le suivi d’indicateurs.
+          Contribution : développement/maintenance d’outils (VBA, PHP, Python), intranet, tableaux de bord.
         </p>
         <div class="tags" aria-label="Compétences associées">
           <span class="tag"><a href="competences.html#dev">Développement</a></span>
@@ -60,8 +64,7 @@
         <strong>Jeux Python – Démineur & Pac-Man</strong>
         <div class="meta">Projet d’étude en groupe</div>
         <p class="hint">
-          Objectif : modéliser une logique de jeu, gérer les entrées utilisateur, structurer le code et livrer un jeu fonctionnel.
-          Points de mise en valeur possibles : architecture du projet, gestion des collisions, tests simples, documentation.
+          Objectif : modéliser une logique de jeu, structurer le code, gérer les entrées utilisateur et livrer un jeu fonctionnel.
         </p>
         <div class="tags" aria-label="Compétences associées">
           <span class="tag"><a href="competences.html#dev">Développement</a></span>
@@ -71,39 +74,26 @@
 
       <article class="item" id="projet-docker">
         <strong>Environnements – Docker & MongoDB</strong>
-        <div class="meta">Travaux pratiques / projets BUT2</div>
+        <div class="meta">Travaux pratiques / projets</div>
         <p class="hint">
-          Objectif : déployer des services de manière reproductible, gérer des conteneurs, et comprendre les interactions réseau.
-          À compléter : lien vers dépôt GitHub, schéma d’architecture, commandes de lancement, résultats obtenus.
+          Objectif : déployer des services de manière reproductible, gérer des conteneurs et comprendre les interactions réseau.
         </p>
         <div class="tags" aria-label="Compétences associées">
           <span class="tag"><a href="competences.html#deploy">Déploiement</a></span>
           <span class="tag"><a href="competences.html#data">Données</a></span>
         </div>
       </article>
+
     </div>
   </div>
 </section>
-
-<section class="section">
-  <div class="container">
-    <h2>Conseil de présentation</h2>
-    <div class="item">
-      <p class="hint" style="margin:0">
-        Pour maximiser l’impact, ajoutez 1 à 3 preuves par projet (captures, schémas, liens Git),
-        et une phrase « résultat » (ex : temps gagné, fiabilité améliorée, adoption par l’équipe).
-      </p>
-    </div>
-  </div>
-</section>
-
 </main>
 <footer class="footer">
   <div class="container">
     <div class="split">
       <div>
         <strong>Clément Rouchit</strong><br>
-        Déploiement d’applications communicantes et sécurisées (BUT Informatique)
+        Développement · Déploiement · Données · Sécurité
       </div>
       <div>
         <a href="contact.html">Me contacter</a> ·
@@ -115,6 +105,8 @@
   </div>
 </footer>
 <script src="assets/js/main.js" defer></script>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact – Clément Rouchit</title>
+  <title>Compétences – Clément Rouchit</title>
   <meta name="description" content="Portfolio et CV en ligne de Clément Rouchit : compétences, projets, expériences et contact." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,13 +20,17 @@
         <span class="dot" aria-hidden="true"></span>
         <span>Clément Rouchit</span>
       </a>
-      <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="menu">Menu</button>
+
+      <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="menu">
+        Menu
+      </button>
+
       <div class="navlinks" id="menu" data-navlinks>
         <a href="index.html">Accueil</a>
-        <a href="competences.html">Compétences</a>
+        <a href="competences.html" aria-current="page">Compétences</a>
         <a href="projets.html">Projets</a>
         <a href="cv.html">CV</a>
-        <a href="contact.html" aria-current="page">Contact</a>
+        <a href="contact.html">Contact</a>
       </div>
     </nav>
   </div>
@@ -36,68 +40,65 @@
 
 <section class="section">
   <div class="container">
-    <h1 class="h1" style="margin-top:10px">Contact</h1>
-    <p class="lead">Un message, une opportunité d’alternance, une question : je réponds rapidement.</p>
+    <h1 class="h1" style="margin-top:10px">Compétences</h1>
+    <p class="lead">Compétences reliées à des projets et livrables.</p>
 
-    <div class="split">
-      <div class="item">
-        <strong>Coordonnées</strong>
-        <p class="hint" style="margin:10px 0 0">
-          Email : <a href="mailto:cl.rouchit@gmail.com">cl.rouchit@gmail.com</a><br>
-          Téléphone : 07 72 26 26 02<br>
-          Localisation : Montgiscard (31)
-        </p>
-        <p class="hint">
-          Conseil : sur GitHub Pages, un formulaire HTML « pur » n’envoie pas d’email. Vous avez 2 options :
-          <br>— utiliser un service (Formspree, Netlify Forms, etc.)
-          <br>— ou un lien <code>mailto:</code>.
-        </p>
-      </div>
+    <div class="list" id="competences">
+      <article class="item" id="dev">
+        <strong>Développement applicatif (Python, PHP, JavaScript)</strong>
+        <div class="meta">Conception, implémentation, tests, maintenance</div>
+        <p class="hint">Objectif : livrer des fonctionnalités stables et maintenables.</p>
+        <div class="tags">
+          <span class="tag"><a href="projets.html#stage-energie-services">Stage — outils internes</a></span>
+          <span class="tag"><a href="projets.html#projet-python-jeux">Jeux Python</a></span>
+        </div>
+      </article>
 
-      <div class="item">
-        <strong>Formulaire</strong>
-        <p class="hint">Option simple : remplacez l’attribut <code>action</code> par l’URL Formspree.</p>
+      <article class="item" id="data">
+        <strong>Données & BI (SQL, dashboards)</strong>
+        <div class="meta">Requêtes, indicateurs, visualisation, qualité</div>
+        <p class="hint">Objectif : produire des indicateurs actionnables.</p>
+        <div class="tags">
+          <span class="tag"><a href="projets.html#stage-energie-services">Tableaux de bord</a></span>
+        </div>
+      </article>
 
-        <form action="mailto:cl.rouchit@gmail.com" method="post" enctype="text/plain">
-          <div class="form-row">
-            <div>
-              <label for="nom">Nom</label>
-              <input id="nom" name="Nom" autocomplete="name" required />
-            </div>
-            <div>
-              <label for="email">Email</label>
-              <input id="email" name="Email" type="email" autocomplete="email" required />
-            </div>
-          </div>
+      <article class="item" id="deploy">
+        <strong>Déploiement & environnements (Docker, réseau)</strong>
+        <div class="meta">Reproductibilité, services, configuration</div>
+        <p class="hint">Objectif : exécuter et livrer dans un environnement maîtrisé.</p>
+        <div class="tags">
+          <span class="tag"><a href="projets.html#projet-docker">Docker / MongoDB</a></span>
+        </div>
+      </article>
 
-          <div>
-            <label for="sujet">Sujet</label>
-            <input id="sujet" name="Sujet" required />
-          </div>
+      <article class="item" id="security">
+        <strong>Bonnes pratiques de sécurité</strong>
+        <div class="meta">Gestion des accès, hygiène, réduction des risques</div>
+        <p class="hint">Objectif : limiter les risques courants et sécuriser l’usage.</p>
+        <div class="tags">
+          <span class="tag"><a href="projets.html#stage-energie-services">Intranet</a></span>
+        </div>
+      </article>
 
-          <div>
-            <label for="message">Message</label>
-            <textarea id="message" name="Message" required></textarea>
-          </div>
-
-          <button class="btn primary" type="submit">Envoyer</button>
-          <p class="hint" style="margin:0">
-            Si vous utilisez <code>mailto:</code>, l’envoi ouvrira votre client mail.
-            Pour un envoi direct sans client mail, passez par Formspree.
-          </p>
-        </form>
-      </div>
+      <article class="item" id="team">
+        <strong>Travail en équipe</strong>
+        <div class="meta">Organisation, communication, priorisation</div>
+        <p class="hint">Objectif : produire efficacement et améliorer en continu.</p>
+        <div class="tags">
+          <span class="tag"><a href="projets.html#projet-python-jeux">Jeux en groupe</a></span>
+        </div>
+      </article>
     </div>
   </div>
 </section>
-
 </main>
 <footer class="footer">
   <div class="container">
     <div class="split">
       <div>
         <strong>Clément Rouchit</strong><br>
-        Déploiement d’applications communicantes et sécurisées (BUT Informatique)
+        Développement · Déploiement · Données · Sécurité
       </div>
       <div>
         <a href="contact.html">Me contacter</a> ·
@@ -109,6 +110,8 @@
   </div>
 </footer>
 <script src="assets/js/main.js" defer></script>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>

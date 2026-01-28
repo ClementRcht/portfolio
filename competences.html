@@ -40,7 +40,6 @@
   </header>
 
   <main id="contenu">
-
     <section class="section">
       <div class="container">
         <h1 class="h1" style="margin-top:10px">Compétences</h1>
@@ -56,9 +55,10 @@
           </p>
         </div>
 
-        <div class="competences-grid" aria-label="Niveaux de développement des compétences">
+        <!-- ✅ id ajouté pour que index.html#competences fonctionne -->
+        <div class="competences-grid" id="competences" aria-label="Niveaux de développement des compétences">
           <!-- Réaliser -->
-          <article class="comp-col">
+          <article class="comp-col" id="realiser">
             <header class="comp-head comp-realiser">
               <h2>Réaliser</h2>
             </header>
@@ -76,14 +76,14 @@
                 <p>Adapter des applications sur un ensemble de supports (embarqué, web, mobile, IoT…)</p>
               </div>
               <div class="chips">
-                <a class="chip" href="projets.html#stage-energie-services">Stage — outils internes</a>
+                <a class="chip" href="projets.html#stage-energie-services">Alternance — outils internes</a>
                 <a class="chip" href="projets.html#projet-python-jeux">Jeux Python</a>
               </div>
             </div>
           </article>
 
           <!-- Optimiser -->
-          <article class="comp-col">
+          <article class="comp-col" id="optimiser">
             <header class="comp-head comp-optimiser">
               <h2>Optimiser</h2>
             </header>
@@ -103,7 +103,7 @@
           </article>
 
           <!-- Administrer -->
-          <article class="comp-col">
+          <article class="comp-col" id="administrer">
             <header class="comp-head comp-administrer">
               <h2>Administrer</h2>
             </header>
@@ -121,13 +121,13 @@
                 <p>Faire évoluer et maintenir un système informatique communicant en conditions opérationnelles</p>
               </div>
               <div class="chips">
-                <a class="chip" href="projets.html#projet-docker">Docker / MongoDB</a>
+                <a class="chip" href="projets.html#projet-reseau-infra">Réseau & infra</a>
               </div>
             </div>
           </article>
 
           <!-- Gérer -->
-          <article class="comp-col">
+          <article class="comp-col" id="gerer">
             <header class="comp-head comp-gerer">
               <h2>Gérer</h2>
             </header>
@@ -147,7 +147,7 @@
           </article>
 
           <!-- Conduire -->
-          <article class="comp-col">
+          <article class="comp-col" id="conduire">
             <header class="comp-head comp-conduire">
               <h2>Conduire</h2>
             </header>
@@ -168,7 +168,7 @@
           </article>
 
           <!-- Collaborer -->
-          <article class="comp-col">
+          <article class="comp-col" id="collaborer">
             <header class="comp-head comp-collaborer">
               <h2>Collaborer</h2>
             </header>
@@ -196,6 +196,7 @@
           <h2 style="margin:0 0 10px; font-size:20px">Technologies & outils</h2>
           <p class="hint" style="margin:0 0 10px">Stack et outils utilisés selon les projets.</p>
           <div class="chips" style="margin-top:8px">
+            <!-- Déjà présent -->
             <span class="chip chip-static">Python</span>
             <span class="chip chip-static">SQL</span>
             <span class="chip chip-static">PHP</span>
@@ -206,11 +207,20 @@
             <span class="chip chip-static">SentinelOne</span>
             <span class="chip chip-static">Ansible</span>
             <span class="chip chip-static">Kubernetes</span>
+
+            <!-- ✅ Ajouts basés sur ton CV -->
+            <span class="chip chip-static">VBA</span>
+            <span class="chip chip-static">Java</span>
+            <span class="chip chip-static">MongoDB</span>
+            <span class="chip chip-static">Power BI</span>
+            <span class="chip chip-static">Excel</span>
+            <span class="chip chip-static">DAX</span>
           </div>
         </div>
       </div>
     </section>
   </main>
+
   <footer class="footer">
     <div class="container">
       <div class="split">
@@ -228,6 +238,7 @@
         GitHub Pages.</p>
     </div>
   </footer>
+
   <script src="assets/js/main.js" defer></script>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();

@@ -493,8 +493,15 @@ textarea {
 
 .comp-body {
   padding: 14px;
-  display: grid;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
   gap: 12px;
+}
+
+.comp-body .chips {
+  margin-top: auto;
+  padding-top: 6px;
 }
 
 .level {

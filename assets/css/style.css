@@ -552,27 +552,27 @@ textarea {
 }
 
 .comp-realiser {
-  background: linear-gradient(135deg, rgba(200, 45, 45, .35), rgba(200, 45, 45, .10));
+  background: linear-gradient(135deg, rgba(138, 190, 255, .26), rgba(16, 26, 51, .12));
 }
 
 .comp-optimiser {
-  background: linear-gradient(135deg, rgba(255, 150, 60, .30), rgba(255, 150, 60, .10));
+  background: linear-gradient(135deg, rgba(118, 173, 255, .24), rgba(16, 26, 51, .12));
 }
 
 .comp-administrer {
-  background: linear-gradient(135deg, rgba(255, 205, 60, .28), rgba(255, 205, 60, .10));
+  background: linear-gradient(135deg, rgba(98, 156, 255, .24), rgba(16, 26, 51, .12));
 }
 
 .comp-gerer {
-  background: linear-gradient(135deg, rgba(120, 210, 95, .28), rgba(120, 210, 95, .10));
+  background: linear-gradient(135deg, rgba(86, 140, 255, .23), rgba(16, 26, 51, .12));
 }
 
 .comp-conduire {
-  background: linear-gradient(135deg, rgba(70, 120, 255, .30), rgba(70, 120, 255, .10));
+  background: linear-gradient(135deg, rgba(74, 126, 255, .22), rgba(16, 26, 51, .12));
 }
 
 .comp-collaborer {
-  background: linear-gradient(135deg, rgba(110, 120, 150, .28), rgba(110, 120, 150, .10));
+  background: linear-gradient(135deg, rgba(160, 210, 255, .22), rgba(16, 26, 51, .12));
 }
 
 @media (max-width: 1200px) {
@@ -585,4 +585,43 @@ textarea {
   .competences-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* ====== Competences header accents ====== */
+.comp-head {
+  position: relative;
+}
+
+.comp-head::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: rgba(138, 190, 255, .55);
+}
+
+.comp-realiser::before {
+  background: rgba(138, 190, 255, .55);
+}
+
+.comp-optimiser::before {
+  background: rgba(118, 173, 255, .55);
+}
+
+.comp-administrer::before {
+  background: rgba(98, 156, 255, .55);
+}
+
+.comp-gerer::before {
+  background: rgba(86, 140, 255, .55);
+}
+
+.comp-conduire::before {
+  background: rgba(74, 126, 255, .55);
+}
+
+.comp-collaborer::before {
+  background: rgba(160, 210, 255, .55);
 }

@@ -450,7 +450,6 @@ textarea {
   }
 }
 
-
 /* ====== Hover refinements ====== */
 .item:hover,
 .pill:hover,
@@ -461,7 +460,6 @@ textarea {
 .btn:hover {
   border-color: rgba(255, 255, 255, .26)
 }
-
 
 /* ====== Competences grid ====== */
 .competences-grid {
@@ -483,7 +481,8 @@ textarea {
 
 .comp-head {
   padding: 14px 14px;
-  border-bottom: 1px solid rgba(255, 255, 255, .16);
+  border-bottom: 1px solid rgba(255, 255, 255, .14);
+  color: var(--text);
 }
 
 .comp-head h2 {
@@ -553,37 +552,27 @@ textarea {
 }
 
 .comp-realiser {
-  background: linear-gradient(135deg, rgba(200, 45, 45, .95), rgba(200, 45, 45, .55));
+  background: linear-gradient(135deg, rgba(200, 45, 45, .35), rgba(200, 45, 45, .10));
 }
 
 .comp-optimiser {
-  background: linear-gradient(135deg, rgba(255, 150, 60, .95), rgba(255, 150, 60, .55));
+  background: linear-gradient(135deg, rgba(255, 150, 60, .30), rgba(255, 150, 60, .10));
 }
 
 .comp-administrer {
-  background: linear-gradient(135deg, rgba(255, 205, 60, .95), rgba(255, 205, 60, .55));
-  color: #0b1020;
-}
-
-.comp-administrer h2 {
-  color: #0b1020;
+  background: linear-gradient(135deg, rgba(255, 205, 60, .28), rgba(255, 205, 60, .10));
 }
 
 .comp-gerer {
-  background: linear-gradient(135deg, rgba(120, 210, 95, .95), rgba(120, 210, 95, .55));
-  color: #0b1020;
-}
-
-.comp-gerer h2 {
-  color: #0b1020;
+  background: linear-gradient(135deg, rgba(120, 210, 95, .28), rgba(120, 210, 95, .10));
 }
 
 .comp-conduire {
-  background: linear-gradient(135deg, rgba(70, 120, 255, .95), rgba(70, 120, 255, .55));
+  background: linear-gradient(135deg, rgba(70, 120, 255, .30), rgba(70, 120, 255, .10));
 }
 
 .comp-collaborer {
-  background: linear-gradient(135deg, rgba(10, 10, 15, .95), rgba(40, 40, 60, .55));
+  background: linear-gradient(135deg, rgba(110, 120, 150, .28), rgba(110, 120, 150, .10));
 }
 
 @media (max-width: 1200px) {

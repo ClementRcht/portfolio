@@ -1,117 +1,236 @@
 <!doctype html>
 <html lang="fr">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Compétences – Clément Rouchit</title>
-  <meta name="description" content="Portfolio et CV en ligne de Clément Rouchit : compétences, projets, expériences et contact." />
+  <meta name="description"
+    content="Portfolio et CV en ligne de Clément Rouchit : compétences, projets, expériences et contact." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body>
-<a class="skip-link" href="#contenu">Aller au contenu</a>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
 
-<header class="header">
-  <div class="container">
-    <nav class="nav" aria-label="Navigation principale">
-      <a class="brand" href="index.html">
-        <span class="dot" aria-hidden="true"></span>
-        <span>Clément Rouchit</span>
-      </a>
+  <header class="header">
+    <div class="container">
+      <nav class="nav" aria-label="Navigation principale">
+        <a class="brand" href="index.html">
+          <span class="dot" aria-hidden="true"></span>
+          <span>Clément Rouchit</span>
+        </a>
 
-      <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="menu">
-        Menu
-      </button>
+        <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="menu">
+          Menu
+        </button>
 
-      <div class="navlinks" id="menu" data-navlinks>
-        <a href="index.html">Accueil</a>
-        <a href="competences.html" aria-current="page">Compétences</a>
-        <a href="projets.html">Projets</a>
-        <a href="cv.html">CV</a>
-        <a href="contact.html">Contact</a>
-      </div>
-    </nav>
-  </div>
-</header>
-
-<main id="contenu">
-
-<section class="section">
-  <div class="container">
-    <h1 class="h1" style="margin-top:10px">Compétences</h1>
-    <p class="lead">Compétences reliées à des projets et livrables.</p>
-
-    <div class="list" id="competences">
-      <article class="item" id="dev">
-        <strong>Développement applicatif (Python, PHP, JavaScript)</strong>
-        <div class="meta">Conception, implémentation, tests, maintenance</div>
-        <p class="hint">Objectif : livrer des fonctionnalités stables et maintenables.</p>
-        <div class="tags">
-          <span class="tag"><a href="projets.html#stage-energie-services">Stage — outils internes</a></span>
-          <span class="tag"><a href="projets.html#projet-python-jeux">Jeux Python</a></span>
+        <div class="navlinks" id="menu" data-navlinks>
+          <a href="index.html">Accueil</a>
+          <a href="competences.html" aria-current="page">Compétences</a>
+          <a href="projets.html">Projets</a>
+          <a href="cv.html">CV</a>
+          <a href="contact.html">Contact</a>
         </div>
-      </article>
-
-      <article class="item" id="data">
-        <strong>Données & BI (SQL, dashboards)</strong>
-        <div class="meta">Requêtes, indicateurs, visualisation, qualité</div>
-        <p class="hint">Objectif : produire des indicateurs actionnables.</p>
-        <div class="tags">
-          <span class="tag"><a href="projets.html#stage-energie-services">Tableaux de bord</a></span>
-        </div>
-      </article>
-
-      <article class="item" id="deploy">
-        <strong>Déploiement & environnements (Docker, réseau)</strong>
-        <div class="meta">Reproductibilité, services, configuration</div>
-        <p class="hint">Objectif : exécuter et livrer dans un environnement maîtrisé.</p>
-        <div class="tags">
-          <span class="tag"><a href="projets.html#projet-docker">Docker / MongoDB</a></span>
-        </div>
-      </article>
-
-      <article class="item" id="security">
-        <strong>Bonnes pratiques de sécurité</strong>
-        <div class="meta">Gestion des accès, hygiène, réduction des risques</div>
-        <p class="hint">Objectif : limiter les risques courants et sécuriser l’usage.</p>
-        <div class="tags">
-          <span class="tag"><a href="projets.html#stage-energie-services">Intranet</a></span>
-        </div>
-      </article>
-
-      <article class="item" id="team">
-        <strong>Travail en équipe</strong>
-        <div class="meta">Organisation, communication, priorisation</div>
-        <p class="hint">Objectif : produire efficacement et améliorer en continu.</p>
-        <div class="tags">
-          <span class="tag"><a href="projets.html#projet-python-jeux">Jeux en groupe</a></span>
-        </div>
-      </article>
+      </nav>
     </div>
-  </div>
-</section>
-</main>
-<footer class="footer">
-  <div class="container">
-    <div class="split">
-      <div>
-        <strong>Clément Rouchit</strong><br>
-        Développement · Déploiement · Données · Sécurité
+  </header>
+
+  <main id="contenu">
+
+    <section class="section">
+      <div class="container">
+        <h1 class="h1" style="margin-top:10px">Compétences</h1>
+        <p class="lead">
+          Synthèse de mes compétences (référentiel « Déploiement d’applications communicantes et sécurisées »).
+        </p>
+
+        <div class="card pad" style="margin-bottom:18px">
+          <div class="badge" style="margin-bottom:10px">Lecture rapide</div>
+          <p class="hint" style="margin:0">
+            Chaque colonne correspond à un axe de compétences. Les blocs « Niveau » résument le degré d’autonomie et de
+            complexité.
+            Certaines compétences sont décrites sur 2 niveaux dans ce référentiel.
+          </p>
+        </div>
+
+        <div class="competences-grid" aria-label="Niveaux de développement des compétences">
+          <!-- Réaliser -->
+          <article class="comp-col">
+            <header class="comp-head comp-realiser">
+              <h2>Réaliser</h2>
+            </header>
+            <div class="comp-body">
+              <div class="level">
+                <div class="lvl">Niveau 1</div>
+                <p>Développer des applications informatiques simples</p>
+              </div>
+              <div class="level">
+                <div class="lvl">Niveau 2</div>
+                <p>Partir des exigences et aller jusqu’à une application complète</p>
+              </div>
+              <div class="level">
+                <div class="lvl">Niveau 3</div>
+                <p>Adapter des applications sur un ensemble de supports (embarqué, web, mobile, IoT…)</p>
+              </div>
+              <div class="chips">
+                <a class="chip" href="projets.html#stage-energie-services">Stage — outils internes</a>
+                <a class="chip" href="projets.html#projet-python-jeux">Jeux Python</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Optimiser -->
+          <article class="comp-col">
+            <header class="comp-head comp-optimiser">
+              <h2>Optimiser</h2>
+            </header>
+            <div class="comp-body">
+              <div class="level">
+                <div class="lvl">Niveau 1</div>
+                <p>Appréhender et construire des algorithmes</p>
+              </div>
+              <div class="level">
+                <div class="lvl">Niveau 2</div>
+                <p>Sélectionner les algorithmes adéquats pour répondre à un problème donné</p>
+              </div>
+              <div class="chips">
+                <a class="chip" href="projets.html#projet-python-jeux">Jeux Python</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Administrer -->
+          <article class="comp-col">
+            <header class="comp-head comp-administrer">
+              <h2>Administrer</h2>
+            </header>
+            <div class="comp-body">
+              <div class="level">
+                <div class="lvl">Niveau 1</div>
+                <p>Installer et configurer un poste de travail</p>
+              </div>
+              <div class="level">
+                <div class="lvl">Niveau 2</div>
+                <p>Déployer des services dans une architecture réseau</p>
+              </div>
+              <div class="level">
+                <div class="lvl">Niveau 3</div>
+                <p>Faire évoluer et maintenir un système informatique communicant en conditions opérationnelles</p>
+              </div>
+              <div class="chips">
+                <a class="chip" href="projets.html#projet-docker">Docker / MongoDB</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Gérer -->
+          <article class="comp-col">
+            <header class="comp-head comp-gerer">
+              <h2>Gérer</h2>
+            </header>
+            <div class="comp-body">
+              <div class="level">
+                <div class="lvl">Niveau 1</div>
+                <p>Concevoir et mettre en place une base de données à partir d’un cahier des charges client</p>
+              </div>
+              <div class="level">
+                <div class="lvl">Niveau 2</div>
+                <p>Optimiser une base de données, interagir avec une application et mettre en œuvre la sécurité</p>
+              </div>
+              <div class="chips">
+                <a class="chip" href="projets.html#stage-energie-services">Tableaux de bord</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Conduire -->
+          <article class="comp-col">
+            <header class="comp-head comp-conduire">
+              <h2>Conduire</h2>
+            </header>
+            <div class="comp-body">
+              <div class="level">
+                <div class="lvl">Niveau 1</div>
+                <p>Identifier les besoins métiers des clients et des utilisateurs</p>
+              </div>
+              <div class="level">
+                <div class="lvl">Niveau 2</div>
+                <p>Appliquer une démarche de suivi de projet en fonction des besoins métiers des clients et des
+                  utilisateurs</p>
+              </div>
+              <div class="chips">
+                <a class="chip" href="projets.html#stage-energie-services">Intranet</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Collaborer -->
+          <article class="comp-col">
+            <header class="comp-head comp-collaborer">
+              <h2>Collaborer</h2>
+            </header>
+            <div class="comp-body">
+              <div class="level">
+                <div class="lvl">Niveau 1</div>
+                <p>Identifier ses aptitudes pour travailler dans une équipe</p>
+              </div>
+              <div class="level">
+                <div class="lvl">Niveau 2</div>
+                <p>Situer son rôle et ses missions au sein d’une équipe informatique</p>
+              </div>
+              <div class="level">
+                <div class="lvl">Niveau 3</div>
+                <p>Manager une équipe informatique</p>
+              </div>
+              <div class="chips">
+                <a class="chip" href="projets.html#stage-energie-services">Travail en équipe</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="card pad" style="margin-top:18px">
+          <h2 style="margin:0 0 10px; font-size:20px">Technologies & outils</h2>
+          <p class="hint" style="margin:0 0 10px">Stack et outils utilisés selon les projets.</p>
+          <div class="chips" style="margin-top:8px">
+            <span class="chip chip-static">Python</span>
+            <span class="chip chip-static">SQL</span>
+            <span class="chip chip-static">PHP</span>
+            <span class="chip chip-static">JavaScript</span>
+            <span class="chip chip-static">HTML/CSS</span>
+            <span class="chip chip-static">Docker</span>
+            <span class="chip chip-static">Git/GitHub</span>
+          </div>
+        </div>
+
       </div>
-      <div>
-        <a href="contact.html">Me contacter</a> ·
-        <a href="cv.html">Télécharger le CV</a> ·
-        <a href="projets.html">Voir les projets</a>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="split">
+        <div>
+          <strong>Clément Rouchit</strong><br>
+          Développement · Déploiement · Données · Sécurité
+        </div>
+        <div>
+          <a href="contact.html">Me contacter</a> ·
+          <a href="cv.html">Télécharger le CV</a> ·
+          <a href="projets.html">Voir les projets</a>
+        </div>
       </div>
+      <p class="hint" style="margin-top:12px">© <span id="year"></span> — Site conçu pour un usage en entretien et sur
+        GitHub Pages.</p>
     </div>
-    <p class="hint" style="margin-top:12px">© <span id="year"></span> — Site conçu pour un usage en entretien et sur GitHub Pages.</p>
-  </div>
-</footer>
-<script src="assets/js/main.js" defer></script>
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+  </footer>
+  <script src="assets/js/main.js" defer></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
+
 </html>

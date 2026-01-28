@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Compétences – Clément Rouchit</title>
+  <title>Contact – Clément Rouchit</title>
   <meta name="description" content="Portfolio et CV en ligne de Clément Rouchit : compétences, projets, expériences et contact." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,10 +27,10 @@
 
       <div class="navlinks" id="menu" data-navlinks>
         <a href="index.html">Accueil</a>
-        <a href="competences.html" aria-current="page">Compétences</a>
+        <a href="competences.html">Compétences</a>
         <a href="projets.html">Projets</a>
         <a href="cv.html">CV</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" aria-current="page">Contact</a>
       </div>
     </nav>
   </div>
@@ -40,59 +40,49 @@
 
 <section class="section">
   <div class="container">
-    <h1 class="h1" style="margin-top:10px">Compétences</h1>
-    <p class="lead">Compétences reliées à des projets et livrables.</p>
+    <h1 class="h1" style="margin-top:10px">Contact</h1>
+    <p class="lead">Version PDF et moyen simple de prise de contact.</p>
 
-    <div class="list" id="competences">
-      <article class="item" id="dev">
-        <strong>Développement applicatif (Python, PHP, JavaScript)</strong>
-        <div class="meta">Conception, implémentation, tests, maintenance</div>
-        <p class="hint">Objectif : livrer des fonctionnalités stables et maintenables.</p>
-        <div class="tags">
-          <span class="tag"><a href="projets.html#stage-energie-services">Stage — outils internes</a></span>
-          <span class="tag"><a href="projets.html#projet-python-jeux">Jeux Python</a></span>
+    <div class="split" style="align-items:start">
+      <div class="card pad">
+        <div class="badge" style="margin-bottom:10px">Localisation : Montgiscard (31)</div>
+        <p class="hint" style="margin:0 0 10px">
+          Contact : <a href="mailto:cl.rouchit@gmail.com">cl.rouchit@gmail.com</a> · 07 72 26 26 02
+        </p>
+        <div class="quicklinks">
+          <a class="btn" href="mailto:cl.rouchit@gmail.com">Email</a>
+          <a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
         </div>
-      </article>
+      </div>
 
-      <article class="item" id="data">
-        <strong>Données & BI (SQL, dashboards)</strong>
-        <div class="meta">Requêtes, indicateurs, visualisation, qualité</div>
-        <p class="hint">Objectif : produire des indicateurs actionnables.</p>
-        <div class="tags">
-          <span class="tag"><a href="projets.html#stage-energie-services">Tableaux de bord</a></span>
-        </div>
-      </article>
+      <div class="card pad">
+        <form action="mailto:cl.rouchit@gmail.com" method="post" enctype="text/plain">
+          <div class="form-row">
+            <div>
+              <label for="nom">Nom</label>
+              <input id="nom" name="nom" autocomplete="name" required />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+            </div>
+          </div>
 
-      <article class="item" id="deploy">
-        <strong>Déploiement & environnements (Docker, réseau)</strong>
-        <div class="meta">Reproductibilité, services, configuration</div>
-        <p class="hint">Objectif : exécuter et livrer dans un environnement maîtrisé.</p>
-        <div class="tags">
-          <span class="tag"><a href="projets.html#projet-docker">Docker / MongoDB</a></span>
-        </div>
-      </article>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
 
-      <article class="item" id="security">
-        <strong>Bonnes pratiques de sécurité</strong>
-        <div class="meta">Gestion des accès, hygiène, réduction des risques</div>
-        <p class="hint">Objectif : limiter les risques courants et sécuriser l’usage.</p>
-        <div class="tags">
-          <span class="tag"><a href="projets.html#stage-energie-services">Intranet</a></span>
-        </div>
-      </article>
-
-      <article class="item" id="team">
-        <strong>Travail en équipe</strong>
-        <div class="meta">Organisation, communication, priorisation</div>
-        <p class="hint">Objectif : produire efficacement et améliorer en continu.</p>
-        <div class="tags">
-          <span class="tag"><a href="projets.html#projet-python-jeux">Jeux en groupe</a></span>
-        </div>
-      </article>
+          <button class="btn primary" type="submit">Envoyer</button>
+        </form>
+      </div>
     </div>
   </div>
 </section>
+
 </main>
+
 <footer class="footer">
   <div class="container">
     <div class="split">
@@ -109,6 +99,7 @@
     <p class="hint" style="margin-top:12px">© <span id="year"></span> Rouchit Clément</p>
   </div>
 </footer>
+
 <script src="assets/js/main.js" defer></script>
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
